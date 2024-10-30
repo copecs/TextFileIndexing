@@ -19,6 +19,10 @@ This project is a Java-based console application that enables users to load mult
 - `Trie`: Implements the Trie data structure for storing and searching words.
 - `ConsoleLikeTester`: Console interface to interact with the `TxtFileRegister`.
 
+## Project showcase video
+
+To watch the video showcase, click on this link: [Video Showcase](https://youtu.be/B77tj6_EPEw)
+
 ## Project showcase picture by picture:
 
 ![Screenshot 1](screenshots/sc1.jpg)
