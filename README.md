@@ -1,5 +1,5 @@
 
-# Text File Searcher
+# Text File Indexer
 
 This project is a Java-based console application that enables users to load multiple text files, either individually or from a folder, and search for specific words within these files. The program utilizes a Trie data structure for efficient word searching.
 
