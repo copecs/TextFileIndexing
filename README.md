@@ -28,10 +28,8 @@ This project is a Java-based console application that enables users to load mult
 
 
 ## Future improvements
-I’d like to add the ability to search for phrases made up of multiple words, like "specific text." To achieve this, we could:
+I’d like to expand the functionality of the phrase search and add an state persistence:
 
--**Store Phrases in the Trie:** Adjust the Trie to recognize spaces between words, allowing it to store multi-word phrases.
+**Advanced Phrase Search:** Currently, the phrase search checks for all words in a phrase separately. To make it more precise, I plan to enhance it to find exact phrases, ensuring that words appear in the correct order and close together in the text.
 
--**Match Whole Phrases:** Update the search so it can find complete phrases, not just single words, by checking each word in the phrase in sequence.
-
-This would make it easy to search for exact phrases within the loaded text files.
+**State Persistence:** Add an option to enable or disable persistence, so the Trie state can be saved and reloaded across sessions when desired.
