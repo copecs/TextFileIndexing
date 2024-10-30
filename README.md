@@ -25,8 +25,6 @@ This project is a Java-based console application that enables users to load mult
 ![Screenshot 3](screenshots/sc3.jpg)
 ![Screenshot 4](screenshots/sc4.jpg)
 ![Screenshot 5](screenshots/sc5.jpg)
-![Screenshot 6](screenshots/sc6.jpg)
-![Screenshot 7](screenshots/sc7.jpg)
 
 
 ## Future improvements
