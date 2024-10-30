@@ -29,6 +29,9 @@ public class ConsoleLikeTester {
                 case "4":
                     searchPrefix();
                     break;
+                case "5":
+                    searchPhrase();
+                    break;
                 case "0":
                     System.out.println("Exiting the program.");
                     break;
@@ -39,11 +42,12 @@ public class ConsoleLikeTester {
     }
 
     private void displayMenu() {
-        System.out.println("=== Console Like Tester ===");
+        System.out.println("\n=== Console Like Tester ===");
         System.out.println("1. Load all txt files from folder");
         System.out.println("2. Load specific txt file");
         System.out.println("3. Search for a word in loaded files");
         System.out.println("4. Search for a prefix in loaded files");
+        System.out.println("5. Search for a phrase in loaded files");
         System.out.println("0. Exit");
         System.out.print("Choose an option: ");
     }
@@ -89,6 +93,21 @@ public class ConsoleLikeTester {
             }
         } else {
             System.out.println("The prefix '" + word + "' was not found in any loaded file.");
+        }
+    }
+    private void searchPhrase() {
+        System.out.print("Enter the phrase to search(word1 word2 ...): ");
+        String word = scanner.nextLine();
+        String[] words = word.split(" ");
+        List<String> foundFiles = register.searchWords(words);
+
+        if (!foundFiles.isEmpty()) {
+            System.out.println("The phrase '" + word + "' was found in the following files:");
+            for (String fileName : foundFiles) {
+                System.out.println(fileName);
+            }
+        } else {
+            System.out.println("The phrase '" + word + "' was not found in any loaded file.");
         }
     }
 

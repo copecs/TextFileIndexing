@@ -54,5 +54,14 @@ public class TxtFileRegister {
         }
         return filepaths;
     }
+    public List<String> searchWords(String[] words){
+        List<String> filepaths = new ArrayList<>();
+        for (TxtFile txtFile : txtFiles) {
+            if (txtFile.searchWords(words)) {
+                filepaths.add(txtFile.getFilePath());
+            }
+        }
+        return filepaths;
+    }
 
 }

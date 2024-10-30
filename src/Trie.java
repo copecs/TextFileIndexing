@@ -63,4 +63,13 @@ public class Trie {
         return curr!=null;
     }
 
+    public boolean searchWords(String[] words){
+        for (String word: words){
+            Node curr = searchNode(word);
+            if(curr==null || !curr.isWord)
+                return false;
+        }
+        return true;
+    }
+
 }

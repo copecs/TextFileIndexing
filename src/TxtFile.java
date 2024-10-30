@@ -33,5 +33,8 @@ public class TxtFile {
     public boolean searchPrefix(String word) {
         return trie.searchPrefix(word);
     }
+    public boolean searchWords(String[] words){
+        return trie.searchWords(words);
+    }
 
 }
