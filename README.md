@@ -9,6 +9,7 @@ This project is a Java-based console application that enables users to load mult
 - **Load Folder**: Load all `.txt` files from a specified folder.
 - **Search Words**: Search for a word across all loaded files, displaying the names of files that contain the specified word.
 - **Search Prefixes**: Search for a specific prefix across all loaded files, displaying the names of files that contain the words that contains that prefix.
+- **Phrase Search**: Search for a phrase across all loaded files, displaying the names of files that contains it.
 - **Efficient Search**: Uses a Trie data structure to store words, optimizing search speed.
 
 ## Project Structure
